@@ -25,51 +25,20 @@ A simple Python CLI tool that fetches real-time weather data for any city using 
    ```bash
    git clone https://github.com/your-username/weather-cli.git
    cd weather-cli
-Create and activate a virtual environment
-
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate     # On Windows: venv\Scripts\activate
-Install dependencies
-
-bash
-Copy
-Edit
-pip install requests
+2. **Create and activate a virtual environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+3. **Install dependencies**
+   ```bash
+   pip install requests
+4. **Add your API key**
+   Open weather.py and replace:
+   ```python
+   API_KEY = "your_openweather_api_key"
+  with your actual API key from OpenWeatherMap.
 Add your API key
 
 Open weather.py and replace:
 
-python
-Copy
-Edit
-API_KEY = "your_openweather_api_key"
-with your actual API key from OpenWeatherMap.
 
-📦 Usage
-bash
-Copy
-Edit
-python weather.py Nairobi
-Example output:
-
-yaml
-Copy
-Edit
-Weather in Nairobi:
-🌤  Clear sky
-🌡️  Temperature: 26°C
-💨  Wind: 4.7 m/s
-💧  Humidity: 60%
-🧪 Sample Cities to Try
-Nairobi
-
-New York
-
-London
-
-Tokyo
-
-Mumbai
