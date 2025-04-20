@@ -3,7 +3,7 @@ import requests
 import sys
 import os
 
-API_KEY = "your_openweather_api_key"  # Replace with your actual key
+API_KEY = "c8cb3b93e5d3ed1c629e924cfd2ab655"  # Replace with your actual key
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 def get_weather(city_name):
