@@ -1,60 +1,91 @@
-# 🌦️ Weather Checker
+# ☁️ Weather CLI Tool (Python)
 
-A modern and responsive web application built with **FastAPI** and **Jinja2** that fetches real-time weather data using the **OpenWeatherMap API**. Designed with a clean and mobile-friendly UI and deployed on **Vercel**.
+A simple and fun command-line tool to check the current weather for any city using the OpenWeatherMap API. Built with Python 🐍.
 
-## 🔗 Live Demo
-Check it out live here: [Weather Checker App](https://weather-web-api-git-main-christophers-projects-9ac7965f.vercel.app/)
+---
 
-## ✨ Features
+## ✨ Demo
 
-- 🔍 Search weather by city
-- 📡 Real-time data from OpenWeatherMap
-- 💻 Clean and responsive UI
-- 🧭 Weather condition icons
-- ☁️ FastAPI backend with HTML templating (Jinja2)
-- 🚀 Deployed on Vercel
+    ```bash
+      $ python weather.py Nairobi
+      Weather in Nairobi:
+      🌤  Clear sky  
+      🌡️  Temperature: 25°C  
+      💨  Wind: 5.2 m/s  
+      💧  Humidity: 58%
+      
+## 🔧 Features
 
-## 🚀 Getting Started
+•	Get current weather conditions for any city
 
-### Prerequisites
+• Uses OpenWeatherMap API for real-time data
 
-- Python 3.8+
-- FastAPI
-- Uvicorn
-- Jinja2
-- requests
+• Easy to use, lightweight, and extensible
 
-### Installation
+• Can be extended into a web API or app
 
-1. Clone the repository:
+## 📦 Requirements
+Python 3.6+
 
-```bash
-git clone https://github.com/your-username/weather-checker.git
-cd weather-checker
+requests library
 
-2. **Install dependencies:**
+OpenWeatherMap API key (free)
 
-```bash
-pip install -r requirements.txt
-Create a .env file or replace the API_KEY in index.py with your OpenWeatherMap API key.
+## ⚙️ Setup Instructions
 
-### Run locally
+1. Clone the repo:
+   ```bash
+       git clone https://github.com/your-username/weather-cli.git
+       cd weather-cli
+   
+2. Create a virtual environment (optional but recommended)
+   ```bash
+      python -m venv venv
+      # Activate it:
+      source venv/bin/activate       # macOS/Linux
+      venv\Scripts\activate          # Windows (CMD)
+      venv\Scripts\Activate.ps1      # Windows (PowerShell)
+   
+3. Install dependencies
+   ```bash
+      pip install requests
+   
+  Or from requirements.txt:
+  
+     ```bash
+         pip install -r requirements.txt
+         
+4. Add your API key:
+Get a free API key from OpenWeatherMap, then open weather.py and replace:
 
-```bash
-uvicorn api.index:app --reload
-Visit http://localhost:8000 to view the app.
+    ```python
+        API_KEY = "your_openweather_api_key"
+with your actual API key (inside quotes).
 
+🚀 Usage
+To check the weather for any city:
 
-4. **📦 Directory Structure**
+    ``bash
+      python weather.py <city name>
+Examples:
 
-```bash
-weather-checker/
-│
-├── api/
-│   ├── index.py
-│   ├── templates/
-│   │   └── form.html
-│   └── static/ (optional, for icons)
-├── vercel.json
-├── README.md
-└── requirements.txt
+    ```bash
+        python weather.py Nairobi
+        python weather.py Tokyo
+        python weather.py "New York"
+
+## 📁 Project Structure
+    ```bash
+    
+        weather-cli/
+        │
+        ├── weather.py          # Main CLI script
+        ├── requirements.txt    # Dependencies
+        ├── .gitignore          # Git ignored files
+        ├── README.md           # This file
+        └── venv/               # (optional) virtual environment
+        
+## 🙌 Acknowledgements:
+
+OpenWeatherMap for the weather data API
+
