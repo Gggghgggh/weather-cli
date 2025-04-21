@@ -6,7 +6,6 @@ A simple and fun command-line tool to check the current weather for any city usi
 
 ## ✨ Demo
 
-    ```bash
       $ python weather.py Nairobi
       Weather in Nairobi:
       🌤  Clear sky  
@@ -34,7 +33,7 @@ OpenWeatherMap API key (free)
 ## ⚙️ Setup Instructions
 
 1. Clone the repo:
-   ```bash
+   
        git clone https://github.com/your-username/weather-cli.git
        cd weather-cli
    
@@ -47,7 +46,7 @@ OpenWeatherMap API key (free)
       venv\Scripts\Activate.ps1      # Windows (PowerShell)
    
 3. Install dependencies
-   ```bash
+     ```bash
       pip install requests
    
   Or from requirements.txt:
