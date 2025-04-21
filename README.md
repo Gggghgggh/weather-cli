@@ -63,17 +63,15 @@ with your actual API key (inside quotes).
 🚀 Usage
 To check the weather for any city:
 
-    ``bash
-      python weather.py <city name>
+       python weather.py <city name>
 Examples:
 
-    ```bash
         python weather.py Nairobi
         python weather.py Tokyo
         python weather.py "New York"
 
 ## 📁 Project Structure
-    ```bash
+
     
         weather-cli/
         │
