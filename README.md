@@ -1,44 +1,60 @@
-# 🌦️ Weather CLI
+# 🌦️ Weather Checker
 
-A simple Python CLI tool that fetches real-time weather data for any city using the OpenWeatherMap API.
+A modern and responsive web application built with **FastAPI** and **Jinja2** that fetches real-time weather data using the **OpenWeatherMap API**. Designed with a clean and mobile-friendly UI and deployed on **Vercel**.
 
----
+## 🔗 Live Demo
+Check it out live here: [Weather Checker App](https://weather-web-api-git-main-christophers-projects-9ac7965f.vercel.app/)
 
-## 🔧 Features
+## ✨ Features
 
-- Get current weather by city name
-- Outputs temperature, humidity, wind, and weather conditions
-- Lightweight and easy to use
+- 🔍 Search weather by city
+- 📡 Real-time data from OpenWeatherMap
+- 💻 Clean and responsive UI
+- 🧭 Weather condition icons
+- ☁️ FastAPI backend with HTML templating (Jinja2)
+- 🚀 Deployed on Vercel
 
----
+## 🚀 Getting Started
 
-## 🛠️ Requirements
+### Prerequisites
 
-- Python 3.7+
-- `requests` library
+- Python 3.8+
+- FastAPI
+- Uvicorn
+- Jinja2
+- requests
 
----
+### Installation
 
-## 🚀 Setup Instructions
+1. Clone the repository:
 
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/Gggghgggh/weather-cli.git
-   cd weather-cli
-2. **Create and activate a virtual environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-3. **Install dependencies**
-   ```bash
-   pip install requests
-4. **Add your API key**
-   Open weather.py and replace:
-   ```python
-   API_KEY = "your_openweather_api_key"
-  with your actual API key from OpenWeatherMap.
-Add your API key
+```bash
+git clone https://github.com/your-username/weather-checker.git
+cd weather-checker
 
-Open weather.py and replace:
+2. **Install dependencies:**
+
+```bash
+pip install -r requirements.txt
+Create a .env file or replace the API_KEY in index.py with your OpenWeatherMap API key.
+
+3. **Run locally:**
+
+```bash
+uvicorn api.index:app --reload
+Visit http://localhost:8000 to view the app.
 
 
+4. **📦 Directory Structure**
+
+```bash
+weather-checker/
+│
+├── api/
+│   ├── index.py
+│   ├── templates/
+│   │   └── form.html
+│   └── static/ (optional, for icons)
+├── vercel.json
+├── README.md
+└── requirements.txt
