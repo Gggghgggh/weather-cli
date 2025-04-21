@@ -71,6 +71,9 @@ Examples:
         python weather.py Tokyo
         python weather.py "New York"
 
+## 🌐 Web API Version
+Check out the following repositoty for the web version: [Weather-web-api](https://github.com/Gggghgggh/weather-web-api)
+
 ## 📁 Project Structure
 
     
