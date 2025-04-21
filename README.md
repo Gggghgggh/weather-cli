@@ -15,7 +15,7 @@ A simple and fun command-line tool to check the current weather for any city usi
       
 ## 🔧 Features
 
-•	Get current weather conditions for any city
+• Get current weather conditions for any city
 
 • Uses OpenWeatherMap API for real-time data
 
@@ -60,7 +60,8 @@ Get a free API key from OpenWeatherMap, then open weather.py and replace:
         API_KEY = "your_openweather_api_key"
 with your actual API key (inside quotes).
 
-🚀 Usage
+## 🚀 Usage
+
 To check the weather for any city:
 
        python weather.py <city name>
