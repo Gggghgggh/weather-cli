@@ -23,7 +23,7 @@ A simple Python CLI tool that fetches real-time weather data for any city using 
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/weather-cli.git
+   git clone https://github.com/Gggghgggh/weather-cli.git
    cd weather-cli
 2. **Create and activate a virtual environment**
    ```bash
