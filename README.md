@@ -38,7 +38,7 @@ cd weather-checker
 pip install -r requirements.txt
 Create a .env file or replace the API_KEY in index.py with your OpenWeatherMap API key.
 
-3. **Run locally:**
+### Run locally
 
 ```bash
 uvicorn api.index:app --reload
