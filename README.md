@@ -46,13 +46,12 @@ OpenWeatherMap API key (free)
       venv\Scripts\Activate.ps1      # Windows (PowerShell)
    
 3. Install dependencies
-     ```bash
+      ```bash
       pip install requests
    
-  Or from requirements.txt:
-  
-     ```bash
-         pip install -r requirements.txt
+ Or from requirements.txt:
+ 
+       pip install -r requirements.txt
          
 4. Add your API key:
 Get a free API key from OpenWeatherMap, then open weather.py and replace:
